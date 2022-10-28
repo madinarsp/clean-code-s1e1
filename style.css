@@ -18,8 +18,9 @@
 }
 
 @media (max-width:768px) {
-.tasks-matrix { text-align: center;
-}
+    .tasks-matrix { 
+        text-align: center;
+    }
 }
 .tasks-planner {
     display: block;
