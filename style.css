@@ -60,7 +60,7 @@ button{
 }
 /* Heading */
 .list-heading,
-.label[for="new-task"] {
+.add-task-heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +86,7 @@ button{
 }
 
 /* New Task */
-.label[for="new-task"] {
+.add-task-heading {
   display: block;
   margin: 0 0 20px;
 }
