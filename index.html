@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <aside class="tasks-matrix"><img class="tasks-matrix-img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix"><a class="tasks-matrix-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></aside>
-    <main class="tasks-planner">
-      <section id="add-task-section">
-        <h3 class="add-task-heading">Add Item</h3>
-        <div class="add-task-wrapper"><input id="new-task"class="input task" type="text"><button class="btn add">Add</button></div>
+    <aside class="task-matrix body__element"><img class="task-matrix__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix"><a class="task-matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></aside>
+    <main class="task-planner body__element">
+      <section class="section add-task" id="add-task">
+        <h3 class="section__heading section__heading_mb">Add Item</h3>
+        <div class="add-task__content task"><input id="new-task"class="task__input task__input_type_text task__value task__input_new" type="text"><button class="btn btn_no-border btn_type_add">Add</button></div>
       </section>
-      <section>
-        <h3 class="list-heading">Todo</h3>
-        <ul class="tasks-list" id="todo-tasks">
-          <li class="task-list-item"><input class="input" type="checkbox"><label class="label task">Pay Bills</label><input type="text" class="input task"><button class="btn edit">Edit</button><button class="btn delete"><img class="remove-icon" src="./remove.svg" alt="remove"></button></li>
-          <li class="task-list-item edit-mode"><input class="input" type="checkbox"><label class="label task">Go Shopping</label><input type="text" value="Go Shopping" class="input task"><button class="btn edit">Save</button><button class="btn delete"><img class="remove-icon" src="./remove.svg" alt="remove"></button></li>
+      <section class="section">
+        <h3 class="section__heading">Todo</h3>
+        <ul class="task-list task-list_type_todo" id="todo-tasks">
+          <li class="task-list__item task"><input class="task__input task__input_type_checkbox" type="checkbox"><label class="task__label task__value">Pay Bills</label><input type="text" class="task__input task__input_type_text task__value"><button class="btn btn_no-border btn_type_edit">Edit</button><button class="btn btn_no-border btn_type_delete"><img class="btn__icon_remove" src="./remove.svg" alt="remove"></button></li>
+          <li class="task-list__item task-list__item_mode_edit task"><input class="task__input task__input_type_checkbox" type="checkbox"><label class="task__label task__value">Go Shopping</label><input type="text" value="Go Shopping" class="task__input task__input_type_text task__value"><button class="btn btn_no-border btn_type_edit">Save</button><button class="btn btn_no-border btn_type_delete"><img class="btn__icon_remove" src="./remove.svg" alt="remove"></button></li>
         </ul>
       </section>
-      <section>
-        <h3 class="list-heading">Completed</h3>
-        <ul class="tasks-list" id="done-tasks">
-          <li class="task-list-item"><input class="input" type="checkbox" checked><label class="label task">See the Doctor</label><input type="text" class="input task"><button class="btn edit">Edit</button><button class="btn delete"><img class="remove-icon" src="./remove.svg" alt="remove"></button></li>
+      <section class="section">
+        <h3 class="section__heading">Completed</h3>
+        <ul class="task-list task-list_type_done" id="done-tasks">
+          <li class="task-list__item task"><input class="task__input task__input_type_checkbox" type="checkbox" checked><label class="task__label task__value">See the Doctor</label><input type="text" class="task__input task__input_type_text task"><button class="btn btn_no-border btn_type_edit">Edit</button><button class="btn btn_no-border btn_type_delete"><img class="btn__icon_remove" src="./remove.svg" alt="remove"></button></li>
         </ul>
       </section>
     </main>
